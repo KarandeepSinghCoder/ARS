@@ -3,10 +3,13 @@ var express = require("express"),
   app = express(),
   bodyParser = require("body-parser"),
   passport = require("passport"),
-  mongoose = require("mongoose"),
   localStrategy = require("passport-local"),
   passportLocalMongoose = require("passport-local-mongoose");
 const { check, validationResult } = require("express-validator");
+const colors = require('colors')
+const dotenv = require('dotenv')
+
+const connectDB = require('./config/db')
 
 //Modles to be included
 var hospital = require("./modles/hospital"),
@@ -18,17 +21,10 @@ app.use("/", express.static("public"));
 //PORT ADDRESS
 var port = process.env.PORT || 3001;
 
-//Altus Data cluster connection query
-// mongoose
-//   .connect("//cluster link to be added here", {
-//     useUnifiedTopology: true,
-//     useNewUrlParser: true
-//   })
-//   .then(() => console.log("DB Connected!"))
-//   .catch(err => {
-//     console.log("fail");
-//     console.log(err);
-//   });
+dotenv.config()
+
+
+connectDB()
 //Altus Data cluster connection query ends
 
 //app.use
@@ -51,5 +47,5 @@ app.get("/", function(req, res) {
 
 //Server
 app.listen(port, function() {
-  console.log("server is on");
+  console.log("server is on".yellow.bold);
 });
