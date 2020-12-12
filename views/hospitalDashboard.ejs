@@ -1,6 +1,7 @@
 <%- include('partials/header'); -%>
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
 	<head>
 		<meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -18,64 +19,70 @@
                 <div class="col-sm-6" style="margin:0 auto;">
                     <form>
                         <h2>Add An Organ!</h2>
+=======
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" type="text/css" href="/asserts/css/login_style.css" />
+	<title>Dashboard</title>
+</head>
+
+<body>
+	<div class="container">
+		<h1 class="text-center">Hospital Dashboard</h1>
+		<div class="row mt-5">
+			<div class="col-sm-4">
+				<img src="/asserts/img/human_organ_illustration.png" />
+			</div>
+			<div class="col-sm-6" style="margin:0 auto;">
+				<form action="/addorgan" method="POST">
+					<h2>Add An Organ!</h2>
+>>>>>>> 4c62a6bd62268592534c9d5ce87fd027579093e6
 					<form>
 						<div class="form-group row">
-							<label for="inputDistance" class="col-sm-3 col-form-label"
-								>Date</label
-							>
+							<label for="inputDistance" class="col-sm-3 col-form-label">Date</label>
 							<div class="col-sm-9">
-								<input
-									type="date"
-									class="form-control"
-									id="inputDistance"
-								/>
+								<input type="date" class="form-control" id="inputDistance" name="date" />
 							</div>
 						</div>
 						<div class="form-group row">
-							<label for="inputZip" class="col-sm-3 col-form-label"
-								>Age</label
-							>
+							<label for="inputZip" class="col-sm-3 col-form-label">Age</label>
 							<div class="col-sm-9">
-								<input
-									type="number"
-									class="form-control"
-									id="inputZip"
-									value="20"
-								/>
+								<input type="number" class="form-control" id="inputZip" value="20" name="age" />
 							</div>
 						</div>
 						<div class="form-group row">
-							<label for="inputPassword" class="col-sm-6 col-form-label"
-								>Add an organ :</label
-							>
-							<select
-								class="custom-select col-sm-12 my-1 mr-sm-5"
-								id="inlineFormCustomSelectPref"
-							>
+							<label for="inputPassword" class="col-sm-6 col-form-label">Add an organ :</label>
+							<select class="custom-select col-sm-12 my-1 mr-sm-5" id="inlineFormCustomSelectPref"
+								name="choice">
 								<option selected>Choose...</option>
 								<option value="1">Heart</option>
 								<option value="2">Kidney</option>
-                                <option value="3">Intestine</option>
-                                <option value="3">Liver</option>
-                                <option value="3">Lungs</option>
-                                <option value="3">Pancreas</option>
-                                <option value="3">Plasma</option>
+								<option value="3">Intestine</option>
+								<option value="4">Liver</option>
+								<option value="5">Lungs</option>
+								<option value="6">Pancreas</option>
+								<option value="7">Plasma</option>
 							</select>
-                        </div>
-                        <div class="form-group">
-    <label for="exampleFormControlTextarea1">Remarks</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-  </div>
+						</div>
+						<div class="form-group">
+							<label for="exampleFormControlTextarea1">Remarks</label>
+							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+								name="remarks"></textarea>
+						</div>
 						<div class="form-group row">
 							<div class="col-sm-6">
-								<div class="read_bt"><a href="organ">ADD</a></div>
+
+								<button class="read_bt" type="submit">ADD</button>
 							</div>
 						</div>
-                    </form>
-                </div>
+					</form>
 			</div>
 		</div>
-	</body>
+	</div>
+</body>
+
 </html>
 
 <%- include('partials/footer'); -%>

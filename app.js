@@ -103,6 +103,85 @@ function isLoggedIn(req, res, next) {
 
 // ***************************Authentication section ends***************************
 //RESTFUL ROUTES
+app.post("/addorgan", function(req, res) {
+  var date = req.body.date;
+  var age = req.body.age;
+  var choice = req.body.choice;
+  var remarks = req.body.remarks;
+  var hosp = req.user.id;
+  if (choice == 1) {
+    var newdata = { hosp: hosp, date: date, age: age, remarks: remarks };
+    heart.create(newdata, function(err, newlyCreated) {
+      if (err) {
+        console.log(err);
+      } else {
+        res.render("hospitaldashboard");
+      }
+    });
+  }
+  if (choice == 2) {
+    var newdata = { hosp: hosp, date: date, age: age, remarks: remarks };
+    kidney.create(newdata, function(err, newlyCreated) {
+      if (err) {
+        console.log(err);
+      } else {
+        res.render("hospitaldashboard");
+      }
+    });
+  }
+  if (choice == 3) {
+    var newdata = { hosp: hosp, date: date, age: age, remarks: remarks };
+    intestine.create(newdata, function(err, newlyCreated) {
+      if (err) {
+        console.log(err);
+      } else {
+        res.render("hospitaldashboard");
+      }
+    });
+  }
+  if (choice == 4) {
+    var newdata = { hosp: hosp, date: date, age: age, remarks: remarks };
+    liver.create(newdata, function(err, newlyCreated) {
+      if (err) {
+        console.log(err);
+      } else {
+        res.render("hospitaldashboard");
+      }
+    });
+  }
+  if (choice == 5) {
+    var newdata = { hosp: hosp, date: date, age: age, remarks: remarks };
+    lungs.create(newdata, function(err, newlyCreated) {
+      if (err) {
+        console.log(err);
+      } else {
+        res.render("hospitaldashboard");
+      }
+    });
+  }
+  if (choice == 6) {
+    var newdata = { hosp: hosp, date: date, age: age, remarks: remarks };
+    pancreas.create(newdata, function(err, newlyCreated) {
+      if (err) {
+        console.log(err);
+      } else {
+        res.render("hospitaldashboard");
+      }
+    });
+  }
+  if (choice == 7) {
+    var newdata = { hosp: hosp, date: date, age: age, remarks: remarks };
+    plasma.create(newdata, function(err, newlyCreated) {
+      if (err) {
+        console.log(err);
+      } else {
+        res.render("hospitaldashboard");
+      }
+    });
+  }
+  //   res.render("index");
+});
+
 app.get("/", function(req, res) {
   res.render("index");
 });
