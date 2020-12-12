@@ -32,6 +32,21 @@ app.set("view engine", "ejs");
 app.get("/", function(req, res) {
   res.render("index");
 });
+app.get("/findorgan", function(req, res) {
+  //form to be submited so as to search database
+  res.render("findorgan");
+});
+app.get("/organ", function(req, res) {
+  //to display all the organs
+  res.render("organ");
+});
+
+app.get("/hospitallogin", function(req, res) {
+  res.render("hospitallogin");
+});
+app.get("/hospitaldashboard", function(req, res) {
+  res.render("hospitaldashboard");
+});
 
 //Hospital login
 // app.get("/login", function(req, res) {
