@@ -64,8 +64,9 @@ app.post("/register", function(req, res) {
     new hospital({
       username: req.body.username,
       name: req.body.name,
-      email: req.body.name,
-      contact: req.body.WPnum
+      email: req.body.email,
+      address: req.body.address,
+      contact: req.body.contact
     }),
     req.body.password,
     function(err, user) {
