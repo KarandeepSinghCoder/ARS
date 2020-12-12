@@ -1,0 +1,12 @@
+.organ {
+	width: 100%;
+	float: left;
+	background-image: url(/asserts/img/login_bg.png);
+	height: 80vh;
+	/* height: auto; */
+	padding: 50px;
+	background-size: cover;
+}
+.card{
+    margin: 0 auto;
+}

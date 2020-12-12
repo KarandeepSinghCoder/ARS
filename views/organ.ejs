@@ -1,14 +1,31 @@
+<%- include('partials/header'); -%>
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="/asserts/css/organ_style.css"
+		/>
+		<title>Organ</title>
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-
-<body>
-
-</body>
-
+	<body>
+		<div class="container organ">
+			<div class="card text-center" style="width: 25rem">
+				<div class="card-header">Hospital Name</div>
+				<div class="card-body">
+					<h5 class="card-title">Details :</h5>
+					<ul class="list-group list-group-flush">
+						<li class="list-group-item">Date</li>
+						<li class="list-group-item">Age</li>
+						<li class="list-group-item">Address</li>
+						<li class="list-group-item">Remarks</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>
