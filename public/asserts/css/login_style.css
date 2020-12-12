@@ -1,0 +1,19 @@
+body {
+	background-image: url('/asserts/img/login_bg.png');
+	background-size: cover;
+}
+.login_illustration {
+	position: relative;
+    margin: 5% auto;
+}
+h1{
+    font-weight: bold;
+    font-size: 3rem;
+}
+form label{
+    font-weight: bold;
+}
+.more_bt{
+    background-color: #a258ed;
+    color: white;
+}
