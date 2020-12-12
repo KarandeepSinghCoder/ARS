@@ -512,29 +512,24 @@ menu_text {
 
 /* about section start */
 
-.about_section {
+.about .container-fluid {
+	background: url('/asserts/img/about_bg.png');
+	background-size: 100%;
+	background-repeat: no-repeat;
 	width: 100%;
-	float: left;
-	padding: 90px 0px;
+	height: 100vh;
+	position: relative;
+	margin-top: 36%;
 }
-
-.about_taital {
-	width: 60%;
-	float: left;
+.about h1 {
 	font-size: 40px;
 	font-weight: bold;
-	color: #151515;
-	padding-top: 30px;
+	color: white;
+	margin-top: 5%;
 }
-
-.about_text {
-	width: 80%;
-	float: left;
-	font-size: 16px;
-	color: #151515;
-	margin: 0px;
+.about p {
+	color: white;
 }
-
 .read_bt {
 	width: 150px;
 	float: left;
@@ -558,45 +553,12 @@ menu_text {
 	background-color: #a258ed;
 }
 
-.about_tag {
-	margin-bottom: 10px;
-	font-size: 40px;
-	font-weight: 600;
-	color: #fff;
-}
-
-.about_taital_main {
-	width: 100%;
-	float: left;
-	padding: 100px 0px;
-}
-.about_menu {
-	width: 100%;
-	float: left;
-}
-.about_menu ul {
-	margin: 0px;
-	padding: 0px;
-}
-.about_menu li {
-	float: left;
-	font-size: 18px;
-	color: #ffffff;
-	padding-right: 10px;
-}
-
-.about_menu li a {
-	color: #ffffff;
-}
-.about_menu li a:hover {
-	color: #000;
-}
-
 /* about section end */
 /* Find organ section */
 .findorgans {
 	background-image: url('/asserts/img/login_bg.png');
 	background-size: contain;
+	margin-bottom: 5%;
 }
 .findorgans h1 {
 	font-size: 40px;
