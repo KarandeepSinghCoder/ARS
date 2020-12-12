@@ -1,5 +1,80 @@
 <%- include('partials/header'); -%>
-
-<h1>Hospital Dashboard</h1>
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="/asserts/css/login_style.css" />
+		<title>Dashboard</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1 class="text-center">Hospital Dashboard</h1>
+			<div class="row mt-5">
+				<div class="col-sm-4">
+					<img src="/asserts/img/human_organ_illustration.png"/>
+                </div>
+                <div class="col-sm-6" style="margin:0 auto;">
+                    <form>
+                        <h2>Add An Organ!</h2>
+					<form>
+						<div class="form-group row">
+							<label for="inputDistance" class="col-sm-3 col-form-label"
+								>Date</label
+							>
+							<div class="col-sm-9">
+								<input
+									type="date"
+									class="form-control"
+									id="inputDistance"
+								/>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="inputZip" class="col-sm-3 col-form-label"
+								>Age</label
+							>
+							<div class="col-sm-9">
+								<input
+									type="number"
+									class="form-control"
+									id="inputZip"
+									value="20"
+								/>
+							</div>
+						</div>
+						<div class="form-group row">
+							<label for="inputPassword" class="col-sm-6 col-form-label"
+								>Add an organ :</label
+							>
+							<select
+								class="custom-select col-sm-12 my-1 mr-sm-5"
+								id="inlineFormCustomSelectPref"
+							>
+								<option selected>Choose...</option>
+								<option value="1">Heart</option>
+								<option value="2">Kidney</option>
+                                <option value="3">Intestine</option>
+                                <option value="3">Liver</option>
+                                <option value="3">Lungs</option>
+                                <option value="3">Pancreas</option>
+                                <option value="3">Plasma</option>
+							</select>
+                        </div>
+                        <div class="form-group">
+    <label for="exampleFormControlTextarea1">Remarks</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+						<div class="form-group row">
+							<div class="col-sm-6">
+								<div class="read_bt"><a href="organ">ADD</a></div>
+							</div>
+						</div>
+                    </form>
+                </div>
+			</div>
+		</div>
+	</body>
+</html>
 
 <%- include('partials/footer'); -%>
