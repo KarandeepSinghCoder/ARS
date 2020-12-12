@@ -6,25 +6,22 @@ var express = require("express"),
   localStrategy = require("passport-local"),
   passportLocalMongoose = require("passport-local-mongoose");
 const { check, validationResult } = require("express-validator");
-const colors = require('colors')
-const dotenv = require('dotenv')
+const colors = require("colors");
+const dotenv = require("dotenv");
 
-const connectDB = require('./config/db')
+const connectDB = require("./config/db");
 
 //Modles to be included
-var hospital = require("./modles/hospital"),
-  organ = require("./modles/organ"),
-  plasma = require("./modles/plasma");
+
 //Modles ends
 app.use("/", express.static("public"));
 
 //PORT ADDRESS
 var port = process.env.PORT || 3001;
 
-dotenv.config()
+dotenv.config();
 
-
-connectDB()
+connectDB();
 //Altus Data cluster connection query ends
 
 //app.use
