@@ -77,8 +77,8 @@
 									>&times;</a
 								>
 								<div class="overlay-content">
-									<a href="index.html">Home</a>
-									<a href="protect.html">About</a>
+									<a href="#">Home</a>
+									<a href="#about">About</a>
 									<a href="#findorgans">Find Organ</a>
 									<a href="doctors.html">Donate Organ</a>
 									<a href="news.html">News</a>
@@ -209,10 +209,10 @@
    </div> -->
 		<!-- protect section end -->
 		<!-- about section start -->
-		<div class="about">
+		<div class="about" id="about">
 			<div class="container-fluid">
 				<div class="row">
-               <div class="col-md-4"></div>
+					<div class="col-md-4"></div>
 					<div class="col-md-4">
 						<h1 class="text-center">About Us</h1>
 						<p class="m-5">
@@ -287,10 +287,45 @@
 				</div>
 			</div>
 		</div>
-      <!-- Find Organ End-->
-      <!-- Donate Organ Start-->
-      
-      <!---->
+		<!-- Find Organ End-->
+		<!-- Donate Organ Start-->
+		<section>
+			<div class="container">
+				<form
+					action="https://formspree.io/f/xdopwwee"
+					method="POST"
+					id="my-form"
+				>
+					<div class="form-group">
+						<label for="firstname">Firstname</label>
+						<input type="text" id="firstname" name="firstname" />
+					</div>
+
+					<div class="form-group">
+						<label for="lastname">Lastname</label>
+						<input type="text" id="lastname" name="lastname" />
+					</div>
+
+					<div class="form-group">
+						<label for="email">Email of The hospital</label>
+						<input type="email" id="email" name="email" />
+					</div>
+
+					<div class="form-group">
+						<label for="message">Message</label>
+						<textarea
+							name="message"
+							id="message"
+							cols="30"
+							rows="10"
+						></textarea>
+					</div>
+
+					<button type="submit">Submit</button>
+				</form>
+			</div>
+		</section>
+		<!--Donate Organ End-->
 		<!-- doctor section start -->
 		<!-- <div class="doctors_section layout_padding">
       <div class="container-fluid">
@@ -457,9 +492,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
-						<p class="copyright_text">
-							© 2020 All Rights Reserved.
-						</p>
+						<p class="copyright_text">© 2020 All Rights Reserved.</p>
 					</div>
 				</div>
 			</div>
