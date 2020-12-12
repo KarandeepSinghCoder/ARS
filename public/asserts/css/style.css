@@ -220,8 +220,8 @@ button {
 	width: 100%;
 	float: left;
 	background-image: url(/asserts/img/bg.png);
-	height: auto;
-	height: auto;
+	height: 80vh;
+	/* height: auto; */
 	padding: 20px 0px;
 	background-size: 100%;
 }
@@ -593,7 +593,27 @@ menu_text {
 }
 
 /* about section end */
-
+/* Find organ section */
+.findorgans {
+	background-image: url('/asserts/img/login_bg.png');
+	background-size: contain;
+}
+.findorgans h1 {
+	font-size: 40px;
+	color: #081419;
+	font-weight: bold;
+	text-align: center;
+}
+.findorgans .form-group {
+	margin-top: 5%;
+}
+.findorgans .form-group label {
+	font-size: 20px;
+	font-weight: bold;
+}
+.findorgans .findorgan_illustration {
+	margin: 0 auto;
+}
 /* doctor section start */
 
 .doctors_section {
