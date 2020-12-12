@@ -36,7 +36,7 @@ connectDB();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
 
-// ***************************Authentication section bigins***************************
+// ***************************Authentication section begins***************************
 //passport
 app.use(
   require("express-session")({
