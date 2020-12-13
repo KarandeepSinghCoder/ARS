@@ -576,6 +576,17 @@ menu_text {
 .findorgans .findorgan_illustration {
 	margin: 0 auto;
 }
+/* Donate organ */
+.donate h1 {
+	font-size: 40px;
+	color: #081419;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 5%;
+}
+.donate img {
+	margin: 60px auto;
+}
 /* doctor section start */
 
 .doctors_section {
